@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+
+<!-- <head> -->
+<!--   <meta charset="UTF-8"> -->
+<!--   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!--   <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+<!--   <title>Index</title> -->
+<!-- </head> -->
+
+<!-- <body> -->
+<!--   <h1 style="color: blue">Index</h1> -->
+<!--   <p>This is an HTML file served up by Flaskkkk</p> -->
+<!-- </body> -->
+
+<!-- </html> -->
+
+
+<!DOCTYPE html>
+
+
+
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!--     <meta charset="UTF-8"> -->
+<!--     <title>Report Check</title> -->
+<!--     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+<!-- </head> -->
+<!-- <body> -->
+<!-- <div align="center"> -->
+<!--     <img src="{{ url_for('static', filename='img/school_logo.png') }}" alt=""> -->
+<!--     <h1>Check SEQTA Marks Book</h1> -->
+<!--     <h2>Upload new .xlsx File</h2> -->
+<!--     <form method=post enctype=multipart/form-data> -->
+<!--         <p><input type=file name=file> -->
+<!--             <input type=submit value=Upload> -->
+<!--         </p> -->
+<!--     </form> -->
+<!-- </div> -->
+<!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+<!-- </body> -->
+<!-- </html> -->
+
+{% extends "public/templates/public_template.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <!-- <div class="col"> -->
+    <!--   <h1>Home</h1> -->
+    <!-- </div> -->
+    <div align="center">
+    <img src="{{ url_for('static', filename='img/school_logo.png') }}" alt="">
+    <h1>Report Check</h1>
+    <h2>Upload new .xlsx File</h2>
+    <form method=post enctype=multipart/form-data>
+        <p><input type=file name=file>
+            <input type=submit value=Upload>
+        </p>
+    </form>
+</div>
+  </div>
+</div>
+
+{% endblock %}
+
+<!-- {% block script %} -->
+<!-- <script> -->
+<!--   alert("Template inheritance is awesome"); -->
+<!-- </script> -->
+<!-- {% endblock %} -->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Check</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div align="center">
+    <img src="{{ url_for('static', filename='img/school_logo.png') }}" alt="">
+    <h1>Check SEQTA Marks Book</h1>
+    <h2>Upload new .xlsx File</h2>
+    <form method=post enctype=multipart/form-data>
+        <p><input type=file name=file>
+            <input type=submit value=Upload>
+        </p>
+    </form>
+</div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
+
+

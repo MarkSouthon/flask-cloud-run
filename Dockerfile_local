@@ -1,0 +1,19 @@
+# https://hub.docker.com/_/python
+FROM openjdk:slim
+COPY --from=python:3.10-slim / /
+
+
+# Copy local code to the container image.
+WORKDIR /app
+
+# Copy current directory into container at APP_HOME
+ADD . /app
+
+# Need a C compiler for uwsgi
+RUN apt-get update && apt-get -y install gcc
+
+# Install production dependencies.
+RUN pip install -r requirements.txt
+
+# start uWSGI server
+CMD ["uwsgi", "app.ini"]

@@ -1,0 +1,20 @@
+# {% extends "public/templates/base.html" %}
+
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>STUDENT</th>
+        <th>MESSAGE</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for error in error_list %}
+        <tr>
+          <td>{{ error[0] }}</td>
+          <td>{{ error[1] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

@@ -1,0 +1,16 @@
+Dockerfile
+README.md
+*.pyc*
+*.pyo*
+*.pyd*
+__pycache__
+.pytest_cache
+.vscode
+.venv
+.venv/
+env/
+__pycache__/
+poetry.lock
+pyproject.toml
+.git
+Dockerfile_local

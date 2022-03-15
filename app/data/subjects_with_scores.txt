@@ -1,0 +1,13 @@
+english
+english as an additional language
+mathematics
+science
+humanities and social sciences
+english extension
+mathematics extension
+mathematics accelerated
+mathematics honours
+science honours
+science extension
+humanities and social sciences extension
+
